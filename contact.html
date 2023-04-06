@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Thapa -VFX Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f395046c99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+     <div class="sidebar sidebargo">
+        
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./intro.html">My Intro </a></li>
+               
+                   <li><a href="./work.html">Work</a></li>
+                <li><a href="./contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham" src="./Photo/Hamburger_icon.svg.png" alt="" width="23px">
+                    <img class="cross" src="./Photo/menu2-08-512.webp" alt="" width="23px">
+    </div>
+        <h1 class="hd">Contact me For Work / General Enquiry</h1>
+        <div class="contactform">
+            <form name="submit-to-google-sheet">
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Name</label>
+                  <input type="name" name="Name" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder=" Your Name ">
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Email address</label>
+                  <input type="email" name="Email" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder=" Your Email">
+                  <div id="emailHelp" class="form-text">We'll never share your email & contact with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientphone" class="form-label">Phone no.</label>
+                  <input type="phone" name="Phone" class="form-control" id="clientphone" placeholder="Your Phone NO.">
+                </div>
+                <div class="mb-3">
+                    <label for="clientemail" class="form-label">Enquiry</label>
+                    <input type="name" name="Message" class="form-control" id="clientemail" aria-describedby="emailHelp" placeholder=" Your Enquiry">
+                   
+                  </div>
+                <div class="mb-3 " id="form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient">
+                  <label class="form-check-label" for="isclient">I want you to work with me on a project</label>
+                </div>
+                <button type="submit" class="btn btn-sm">Submit</button>
+                <span id="msg"></span>
+              </form>
+        </div>
+        <div class="copyright-contact">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/lop4eva"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              
+              
+          </div>
+          <p class="n"><i class="fa-solid fa-phone"></i>9862534039</p>
+      <div class="cp">
+          
+          
+          <p class="no">Copyright <i class="fa-regular fa-copyright"></i>   Diamond Thapa </p>
+          
+      </div>
+      </div>
+    </div>
+</div>
+<script src="script.js"> </script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyOzY1_izehmWpAvnJCwEVY_gPkljzZGkChLgq31TC0-OuCKy35-aezRd1pq8jWONM/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {msg.innerHTML="Message Sent Successfully"
+    setTimeout(function(){
+      msg.innerHTML=""
+    }, 4000)
+    form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>

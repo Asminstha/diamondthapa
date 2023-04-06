@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+}
+body{
+    background-image:linear-gradient(to bottom right, rgb(107, 43, 209) ,rgb(40, 56, 56),rgb(10, 10, 10));
+}
+#msg{
+    color: green;
+    display: block;
+    margin-top: -18px;
+    margin-left: 87px;
+}
+.ii{
+    color: blueviolet;
+    position: absolute;
+    padding: 15px 290px;
+}
+.sidebar{
+    position: absolute;
+    /* background: rgb(94, 90, 90); */
+    background-image:linear-gradient(to bottom right, rgb(5, 5, 5), rgb(26, 32, 31),rgb(24, 47, 70));
+    font-family: 'Balsamiq Sans', cursive; 
+  transition: transform 0.2s ease-in;
+    height: 100vh;
+    z-index: 200;
+}
+.sidebar nav{
+padding: 25px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(245, 235, 235);
+}
+.container{
+    display: flex;
+   
+    
+}
+.main{
+    /* background-color: rgb(133, 109, 101); */
+    /* background-color: rgb(255, 238, 0); */
+    width: 100vw;
+    height: 100vh; 
+    
+}
+.info{
+/* background-color: rgb(46, 46, 63); */
+height: 85vh;
+width: 80vw;
+margin:70px auto;
+display: flex;
+justify-content: space-around;
+}
+.devpic img{
+height: 65vh;
+/* padding-right:500px; */
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.hi{
+    font-size:3em;
+    color: rgb(255, 255, 255);
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+   
+}
+.about{
+    font-size: 2.5em;
+    color: azure;
+}
+.moreabout{
+    margin-top: 5px;
+    font-size: 1em;
+    color: rgb(235, 187, 116);
+}
+.buttons{
+    margin: 0.5em;
+    font-size: 5px;
+}
+.btn{
+border-radius: 20px;
+padding: 10px 19px;
+color: aliceblue;
+background-image: linear-gradient(to right,red , black);
+font-weight: bold;
+font-size: 1.5em;
+margin: 2px 5px;
+cursor: pointer;
+}
+.btn:hover{
+    background-image: linear-gradient(to left , red,black );
+    color: rgb(237, 240, 238);
+}
+
+.btn-sm{
+    padding: 10px 30px;
+    margin: 10px 42px;
+}
+.btn-sm:hover{
+    color: aliceblue;
+    background: linear-gradient(to right , rgb(7, 252, 109),rgb(68, 235, 17));
+}
+.work{
+    font-weight: bolder;
+}
+.work a{
+    text-decoration: none;
+    color: rgb(195, 0, 255);
+    font-size: 1.5em;
+}
+/* ----------------Contact form---------------------- */
+.hd{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.contactform{
+padding:0px 50px;
+font-family: 'Alkatra', cursive;
+margin: 0 90px;
+}
+.contactform div{
+    padding: 5px 34px;
+   display: flex;
+   flex-direction: column;
+}
+.contactform div input{
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 100px;
+    width: 15vw;
+    margin:5px 10px;
+}
+#emailHelp{
+    padding: 5px 0;
+    margin: 2px 10px;
+    font-size: 15px;
+}
+#form-check{
+    
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 2px 0;
+    padding: 0 2px;
+}
+
+
+
+
+/* ---------------------intro------------------- */
+.intro h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 12px;
+}
+.intro p{
+    margin: 12px;
+}
+.skillcontainer{
+    padding:0 10px;
+    display: inline-block;
+}
+.intro{
+    margin: 0 119px;
+    font-size: 25px;
+}
+.skill{
+    width: 230px;
+    height: 8px;
+    background-color: red;
+    border: 2px solid black;
+    margin: 10px 8px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    margin: 9px 2px;
+}
+.hundred{
+    width: 180px;
+    background-color:grey
+}
+.fifty{
+    width: 130px;
+    background-color: blueviolet;
+}
+.twenty{
+    width: 70px;
+}
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 200;
+    padding: 0 10px;
+}
+.crosss{
+    transform: translate(-443px, 0px);
+    position: absolute;
+    z-index: 200;
+   
+}
+.cross{
+    margin-left: 120px;
+    background-color: rgb(174, 142, 202);
+   border-radius: 50px;
+}
+
+/* ----------copyright item---------- */
+.copyright {
+    /* border: 2px solid red; */
+    /* background: blue; */
+    display: flex;
+    margin-top: -111px;
+    font-size: 15px;
+
+}
+
+.cp {
+
+    width: 100%;
+    font-size: 1.5em;
+    margin: 14px -2px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    z-index: 0;
+
+}
+.n{
+    margin: 10px;
+}
+
+.cp p {
+    font-size: 0.7em;
+    /* padding-left: 80px */
+    margin: auto;
+}
+
+.fa-solid {
+    margin-right: 0.2em;
+}
+
+.cp p:nth-child(2) {
+    background-color: red;
+}
+
+.fa-regular,
+.far {
+    font-weight: 400;
+    font-size: 0.5em;
+}
+
+.social-icons {
+    margin-top: 7px;
+    margin-left: 11px;
+    z-index: 1;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+.social-icons:hover {
+    color: black;
+    transform: translateX(1px);
+    /* background: linear-gradient(to right, rgb(88, 84, 84), red); */
+    border-radius: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.7em;
+    margin-right: 1em;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: translateY(4px);
+}
+/* -----------------------copyright-about-------------- */
+.copyright-about {
+    /* border: 2px solid red; */
+    /* background: blue; */
+    display: flex;
+    margin-top: 400px;
+    font-size: 0.5em;
+
+}
+
+/* -------copyright-contact------------- */
+.copyright-contact {
+    display: flex;
+    margin-top: 50px;
+    font-size: 0.5em;
+}
+
+.fa-solid.fa-phone {
+    color: rgb(10, 7, 241);
+    margin-right: 10px;
+    font-size: 1em;
+    transition: transform 0.5s;
+}
+
+.fa-solid.fa-phone:hover {
+    color: #4b127a;
+    transform: translateY(-5px);
+}
+.n{
+    font-size: 1.5em;
+    transition:transform 0.5s ;
+    cursor: pointer;
+}
+.n:hover{
+color: green;
+transform: translateX(-5px);}
+h1 {
+    font-size: 40px;
+    margin: 10px;
+    color: lightslategrey;
+}
+
+.intro {
+    margin: 10px 80px;
+
+}
+
+.fix {
+    position: absolute;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 0px;
+
+}
+
+.tab-links {
+    margin-right: 30px;
+    font-size: 2em;
+    font-weight: 500;
+    cursor: pointer;
+    color: lightslategrey;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+    /*To hide all the contents in tab-contents*/
+    margin: 10px 10px;
+}
+
+.tab-contents.active-tab {
+    /*To only show the active-tab items*/
+    display: block;
+}
+
+/* .skillitem{
+    display: flex;
+    align-items: center;
+} -------To display the content line to line*/
+
+.skill {
+    height: 6px;
+    width: 10em;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+.hundred {
+    width: 10em;
+
+}
+
+.fifty {
+    width: 5em;
+    background-color: rgb(252, 6, 6);
+}
+
+.twentyfive {
+    width: 2.5em;
+    background-color: rgb(39, 236, 0);
+}
+
+.ten {
+    width: 2em;
+    background-color: aqua;
+}
+
+/* -----------------------media Small screen---------- */
+
+
+
+@media(max-width:400px){
+    .hd {
+        text-align: center;
+        margin: 30px;
+        font-size: 1em;
+    }
+     .contactform {
+        margin: 8px -56px;
+        width: 52vw;
+    }
+    #emailHelp {
+        padding: 0px 3px;
+        margin: 1px 9px;
+        font-size: 10px;
+        width: 65vw;}
+        .btn-sm {
+            
+            padding: 2px 30px;
+            margin: 5px 31px;
+        }
+        #form-check {
+            flex-direction: row;
+            padding: 1px 42px;
+            font-size: 10px;
+            width: 62vw;
+        }
+        .btn-sm {
+            padding: 2px 30px;
+            margin: 5px 50px;
+        }
+        .buttons {
+            display: flex;
+            font-size: 0.25rem;}
+            .skillcontainer {
+                padding: 0 10px;
+                display: inline-block;
+                width: 82vw;
+}
+.intro {
+    margin: 38px 11px;
+    width: 90vw;}
+
+/* --------home--------- */
+.devpic img {
+    height: 37vh;
+    margin: 56px 0px;}
+    .devinfo{
+        font-size: 0.5em;
+        height: 68vh;
+    }
+    .copyright{
+        margin-top: -87px;
+        font-size: 0.25em;
+    }
+    .cp p{
+        margin-top: -7px;
+    }
+    .btn{
+        padding: 5px 5px;
+    }
+    /* ---------my intro------ */
+    .intro p{
+        font-size: 0.5em;
+        margin-top: -16px;
+    }
+    .intro{
+        margin: 22px 11px;
+        position: absolute;
+    }
+    .tab-titles{
+        font-size: 0.25em;
+        margin-top: -17px;
+    }
+    .tab-contents{
+        margin: 10px 29px;
+        font-size: 0.25em;
+    }
+    .skillitem{
+        margin: -8px 2px;
+    }
+    .copyright-about{
+        margin-top: 516px;
+        font-size: 0.25em;
+    }
+    .contactform{
+        margin: -33px -56px;
+    }
+    .copyright-contact{
+        font-size: 0.25em;
+        margin-top: 119px;
+    }
+    .contactform div input{
+        font-size: 0.25em;
+    }
+    .btn-sm{
+        font-size: 0.9em;
+    }
+}

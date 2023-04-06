@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Thapa -VFX Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f395046c99.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+.main{
+    height: 100%;
+}
+        .cont {
+            position: relative;
+            min-height: 100vh;
+            /* background: yellow; */
+        }
+
+        .cont h1 {
+            text-align: center;
+            color: rgb(212, 153, 153);
+            padding: 15px;
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        .cont .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .cont .video-container .video {
+            height: 250px;
+            width: 350px;
+            border: 3px solid rgb(65, 60, 60);
+            box-shadow: 0 5px 15px green;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .cont .video-container .video video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+        }
+
+        .cont .video-container .video:hover video {
+            transform: scale(1.1);
+        }
+
+        .cont .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+            background: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .cont .popup video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 750px;
+            border-radius: 5px;
+            border: 3px solid #fff;
+            object-fit: cover;
+        }
+
+        .cont .popup span {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 50px;
+            color: #fff;
+            font-weight: bolder;
+            
+            cursor: pointer;
+        }
+        .sidebar{
+            z-index: 100;
+            position: fixed;
+        }
+        .hamburger{
+            z-index: 100;
+            position: sticky;
+        }
+        .ham{
+            z-index: 200;
+        }
+        .cross{
+            z-index: 200;
+        }
+        .copyright-about{
+            position: sticky;
+            margin-top: 120px;
+            font-size: 0.5em;
+        }
+        @media(max-width:800px){
+            .cont .popup video{
+                width: 95%;
+            }}
+            @media(max-width:400px){
+            .cont .video-container .video{
+                width: 250px;
+            }
+            
+        }
+        @media(max-width:530px){
+            .copyright-about{
+                font-size: 0.35em;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./intro.html">My Intro </a></li>
+                   
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="./Photo/Hamburger_icon.svg.png" alt="" width="23px">
+                <img class="cross" src="./Photo/menu2-08-512.webp" alt="" width="23px">
+            </div>
+            <div class="cont">
+                <h1>My previous Work Showreel</h1>
+                <div class="video-container">
+                    
+                    <div class="video"> <video src="./Video/021.mp4" muted></video></div>
+                    
+                    <div class="video"> <video src="./Video/023.mp4" muted></video></div>
+                    <div class="video"> <video src="./Video/1.mp4" muted></video></div>
+                    <div class="video"> <video src="./Video/2.mp4" muted></video></div>
+                    <div class="video"> <video src="./Video/3.mp4" muted></video></div>
+                    <div class="video"> <video src="./Video/4.mp4" muted></video></div>
+                    <div class="video"> <video src="./Video/5.mp4" muted></video></div>
+              
+                </div>
+                <div class="popup">
+                    <span>&times;</span>
+                     <video src="./Video/021.mp4" muted autoplay controls></video>
+                </div>
+                <div class="copyright-about">
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/lop4eva"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        
+                    </div>
+                    <p class="n"><i class="fa-solid fa-phone"></i>9862534039</p>
+                <div class="cp">
+                    
+                    
+                    <p class="no">Copyright <i class="fa-regular fa-copyright"></i>   Diamond Thapa </p>
+                    
+                </div>
+                </div>
+            </div>
+          
+        </div>
+
+    </div>
+    <script src="script.js"> </script>
+    <!-- -------------to display the desired video-------- -->
+   <script>
+document.querySelectorAll('.video-container video').forEach(vid => {
+    vid.onclick=()=>{
+        document.querySelector('.popup').style.display='block';
+        document.querySelector('.popup video').src = vid.getAttribute('src');
+    }
+});
+document.querySelector('.popup span').onclick=()=>{
+    document.querySelector('.popup').style.display='none';
+}
+   </script> 
+</body>
+
+</html>
